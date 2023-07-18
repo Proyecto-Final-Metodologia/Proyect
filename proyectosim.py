@@ -64,25 +64,7 @@ def tiempo(tiempo_muestreo):
         820 < poten <= 1023
         time.sleep(5)
         return poten
-    
-#def guardar_tabla():
-#    while True:
-#        try:
-#            i=1
-#           if i>0:
-                ##tomamos todos los datos incluida la fecha para guardarlos en una lista
-#                list = [["timestamp", "temperatura", "humedad_relativa", "intensidad_luminica"],
-#                fechaActual2, tem, hum, lum]
-#                # el programa toma la lista y la guarda para mandarla a un archivo csv guardado en la misma ruta del programa
-#                with open('proyectoF', '/home/pi/Documents/grovepi', newline='') as file:
-#                    writer = csv.writer(file, quoting=csv.proyectoF,delimiter=';')
-#                    writer.writerows(list)
-
-#        except IOError:
-#            print("Error")
-    
-    
-#while principal        
+         
 while True:
     # Asignamos los nuevos valores devueltos por la función a las variables externas
     tem, hum, poten, lum, tiempo_muestreo, fechaActual2 = variables(tem, hum, poten, lum, tiempo_muestreo, fechaActual2)
