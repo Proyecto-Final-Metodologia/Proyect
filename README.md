@@ -7,4 +7,4 @@ El archivo proyecto contiene todo lo hecho en clase, los sensores y las funcione
 
 El archivo proyectosim es una simulación del proyecto en python usando VSCode, con el fin de poder correr el código desde casa y realizar los test correspondientes
 
-El archivo tes_proyect contiene los test de las funciones del proyectosim
+El archivo test_proyect contiene los test de las funciones del proyectosim
