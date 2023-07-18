@@ -82,6 +82,20 @@ while True:
         
         else:
             setText_norefresh("error")
+        
+#while de la "funcion" guardar            
+    while True:
+        try:
+            i=1
+            if i>0:
+            #tomamos todos los datos incluida la fecha para guardarlos en una lista
+                list = [["timestamp", "temperatura", "humedad_relativa", "intensidad_luminica"],
+                fechaActual2, t, h, slm]
+            # el programa toma la lista y la guarda para mandarla a un archivo csv guardado en la misma ruta del programa
+            with open('proyectoF', '/home/pi/Documents/grovepi', newline='') as file:
+             writer = csv.writer(file, quoting=csv.proyectoF,delimiter=';')
+             writer.writerows(list)
 
-    except IOError:
-       print("Error")
+
+        except IOError:
+            print("Error")
